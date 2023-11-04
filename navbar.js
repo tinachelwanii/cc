@@ -4,6 +4,14 @@ var closebtn = $(".close-icon");
 var container = $(".container");
 var toggleclose = false;
 var togglebar = true;
+// JavaScript code for the filter button
+var filterButton = document.querySelector(".screen-filterbtn");
+
+filterButton.addEventListener("click", function () {
+  // Call a function to show the filter screen
+  showscreenFilter();
+});
+
 
 function shownav() {
   document.body.scrollTop = 0;
