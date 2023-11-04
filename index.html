@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coursera</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="screen-nav">
+      <button class="bar-icon btn" onclick="shownav()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <img
+        class="lnav-item coursera-logo-screen"
+        src="./imgs/Coursera-Logo-768x432.png"
+        alt="Coursera"
+        srcset=""
+      />
+      <button class="close-icon btn" onclick="hidenav()">
+        <i class="fa-solid fa-x"></i>
+      </button>
+    </nav>
+    <div class="screen-nav-menu">
+      <ul>
+        <li class="screen-nav-menu-item"><a href="">For Businesses</a></li>
+        <li class="screen-nav-menu-item"><a href="">For Universities</a></li>
+        <li class="screen-nav-menu-item"><a href="">For Governments</a></li>
+        <li class="screen-nav-menu-item"><a href="">Online Degrees</a></li>
+        <li class="screen-nav-menu-item">
+          <a href="">Find your new career</a>
+        </li>
+      </ul>
+      <hr />
+      <ul>
+        <li class="screen-nav-menu-item list-heading">Goals</li>
+        <li class="screen-nav-menu-item"><a href="">Take a free course</a></li>
+        <li class="screen-nav-menu-item"><a href="">Earn a degree</a></li>
+        <li class="screen-nav-menu-item"><a href="">Earn a certificate</a></li>
+      </ul>
+      <hr />
+      <ul>
+        <li class="screen-nav-menu-item list-heading">Subjects</li>
+        <li class="screen-nav-menu-item"><a href="">Data Science</a></li>
+        <li class="screen-nav-menu-item"><a href="">Business</a></li>
+        <li class="screen-nav-menu-item"><a href="">Computer Science</a></li>
+        <li class="screen-nav-menu-item">
+          <a href="">Information Technology</a>
+        </li>
+        <li class="screen-nav-menu-item"><a href="">Language Learning</a></li>
+        <li class="screen-nav-menu-item"><a href="">Health</a></li>
+        <li class="screen-nav-menu-item">
+          <a href="">Personal Development</a>
+        </li>
+        <li class="screen-nav-menu-item">
+          <a href="">Physical Science and Engineering</a>
+        </li>
+      </ul>
+      <hr />
+      <ul>
+        <li class="screen-nav-menu-item"><a href="">Browse all subjects</a></li>
+        <li class="screen-nav-menu-item">Get Our App</li>
+      </ul>
+      <div class="nav-buttons">
+        <button class="screen-btn btn signupbtn-screen">Join for Free</button>
+        <button class="screen-btn btn loginbtn-screen">Login</button>
+      </div>
+    </div>
+    <nav class="top-navbar">
+      <ul>
+        <li class="top-nav-item">For Individuals</li>
+        <li class="top-nav-item">For Businesses</li>
+        <li class="top-nav-item">For Universities</li>
+        <li class="top-nav-item">For Governments</li>
+      </ul>
+    </nav>
+
+    <!-- main navbar  -->
+    <nav class="main-navbar">
+      <div class="l-mainnav">
+        <img
+          class="lnav-item coursera-logo"
+          src="./imgs/Coursera-Logo-768x432.png"
+          alt="Coursera"
+          srcset=""
+        />
+        <div class="dropdown explore">
+          <button class="dropbtn explore lnav-item">
+            Explore
+            <img
+              id="dropicon1"
+              src="./imgs/arrow-down-sign-to-navigate.png"
+              alt=""
+              srcset=""
+            />
+            <img
+              id="dropicon2"
+              src="./imgs/arrow-down-sign-to-navigate (3).png"
+              alt=""
+            />
+          </button>
+          <!-- <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div> -->
+        </div>
+        <div class="searchbox lnav-item">
+          <input
+            type="text"
+            name="searchbox"
+            class="search-box"
+            id="searchcourse"
+            placeholder="What do you want to learn?"
+          />
+          <button class="search">
+            <img src="./imgs/search-interface-symbol.png" alt="" srcset="" />
+          </button>
+        </div>
+      </div>
+      <div class="r-mainnav">
+        <button id="degrees" class="rnav-item btn">
+          Online Degrees<img
+            id="dropicon1"
+            src="./imgs/arrow-down-sign-to-navigate.png"
+            alt=""
+            srcset=""
+          />
+        </button>
+        <a href="#" id="careers" class="rnav-item">Find your New Career</a>
+        <button id="loginbtn" class="rnav-item login btn">Login</button>
+        <button id="signupbtn" class="rnav-item signup btn">
+          Join for free
+        </button>
+      </div>
+    </nav>
+
+    <div class="screen-filter-container">
+      <div class="screen-filter-wrapper">
+        <div class="screen-filter-top">
+          <h3>Filter by:</h3>
+          <button
+            class="btn screen-filter-close-btn"
+            onclick="showfilterscreenMenu()"
+          >
+            close
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <ul class="screen-filter-list">
+          <li>
+            <div class="drop-icon">
+              <img src="./imgs/down-arrow.png" alt="" srcset="" />
+            </div>
+            <h4>Subject</h4>
+          </li>
+          <li>
+            <div class="drop-icon">
+              <img src="./imgs/down-arrow.png" alt="" srcset="" />
+            </div>
+            <h4>Duration</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-main-wrapper">
+        <div class="containers-wrapper">
+          <div class="filter-container">
+            <h3>Filter By</h3>
+            <ul class="filters-wrapper">
+              <div class="filter-category">Subject</div>
+              <label for="datascience"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="subject"
+                    type="checkbox"
+                    name="datascience"
+                    id="datascience"
+                  />Data Science
+                </li></label
+              >
+              <label for="computerscience"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="subject"
+                    type="checkbox"
+                    name="computerscience"
+                    id="computerscience"
+                  />Computer Science
+                </li></label
+              >
+              <label for="webdevelopment"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="subject"
+                    type="checkbox"
+                    name="webdevelopment"
+                    id="webdevelopment"
+                  />Web Development
+                </li>
+              </label>
+              <label for="business"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="subject"
+                    type="checkbox"
+                    name="business"
+                    id="business"
+                  />Business
+                </li></label
+              >
+              <button class="showmore btn">show more</button>
+            </ul>
+            <ul class="filters-wrapper">
+              <div class="filter-category">Duration</div>
+              <label for="less2hr"
+                ><li class="filter-items">
+                  <input
+                    class="duration"
+                    onchange="change()"
+                    type="checkbox"
+                    name="lessthan2hours"
+                    id="less2hr"
+                  />Less than 2 hours
+                </li></label
+              >
+              <label for="1-4weeks"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="duration"
+                    type="checkbox"
+                    name="1-4weeks"
+                    id="1-4weeks"
+                  />1-4 Weeks
+                </li></label
+              >
+              <label for="1-3months"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="duration"
+                    type="checkbox"
+                    name="1-3months"
+                    id="1-3months"
+                  />1-3 Months
+                </li>
+              </label>
+              <label for="3-6months"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="duration"
+                    type="checkbox"
+                    name="3-6months"
+                    id="3-6months"
+                  />3-6 Months
+                </li></label
+              >
+              <button class="showmore btn">show more</button>
+            </ul>
+
+            <ul class="filters-wrapper">
+              <div class="filter-category">Level</div>
+              <label for="Beginner"
+                ><li class="filter-items">
+                  <input
+                    class="level"
+                    onchange="change()"
+                    type="checkbox"
+                    name="beginner"
+                    id="Beginner"
+                  />Beginner
+                </li></label
+              >
+              <label for="Intermediate"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="level"
+                    type="checkbox"
+                    name="intermediate"
+                    id="Intermediate"
+                  />Intermediate
+                </li></label
+              >
+              <label for="Advanced"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="level"+
+                    type="checkbox"
+                    name="advanced"
+                    id="Advanced"
+                  />Advanced
+                </li>
+              </label>
+              <label for="Mixed"
+                ><li class="filter-items">
+                  <input
+                    onchange="change()"
+                    class="level"
+                    type="checkbox"
+                    name="mixed"
+                    id="Mixed"
+                  />Mixed
+                </li></label
+              >
+              <button class="showmore btn">show more</button>
+            </ul>
+          </div>
+          <div class="card-container">
+            <div class="resultcontainer">
+              <h1>1,060 results for "web development"</h1>
+              <div class="filterandsort-wrapper">
+                <button class="screen-filterbtn" onclick="showscreenFilter()">
+                  Filter <i class="fa-solid fa-sliders"></i>
+                </button>
+
+                <div class="sortby-container">
+                  <label class="sortby" for="sort">Sort by:</label>
+                  <select id="sort" name="sort">
+                    <option value="Newest">Newest</option>
+                    <option value="Best Match">Best Match</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="cards-wrapper">
+              <!-- ..............
+              ........... -->
+
+             
+            </div>
+
+            <div class="allpopular-container grid-container-container2">
+              <div class="newandtrending popolar-box">
+                <h3>Coursera</h3>
+                <ul class="trendinglist">
+                  <li class="listitem trending-items">
+                    <a href="">About</a>
+                  </li>
+                  <li class="listitem trending-items">
+                    <a href="">What We Offer</a>
+                  </li>
+                  <li class="listitem trending-items">
+                    <a href="">Careers</a>
+                  </li>
+                  <li class="listitem trending-items">
+                    <a href="">Catalog</a>
+                  </li>
+                  <li class="listitem trending-items">
+                    <a href="">Coursera Plus</a>
+                  </li>
+                  <li class="listitem trending-items">
+                    <a href="">Professional</a>
+                  </li>
+                  <li class="listitem trending-items">
+                    <a href="">Certificates</a>
+                  </li>
+                  <li class="listitem trending-items">
+                    <a href="">Coronavirus Response</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="popularsubjects popolar-box">
+                <h3>Community</h3>
+                <ul class="subjectlist">
+                  <li class="listitem subject-items">
+                    <a href="">Learners</a>
+                  </li>
+                  <li class="listitem subject-items">
+                    <a href="">Partners</a>
+                  </li>
+                  <li class="listitem subject-items">
+                    <a href="">Beta Testers</a>
+                  </li>
+                  <li class="listitem subject-items">
+                    <a href="">Translators</a>
+                  </li>
+                  <li class="listitem subject-items">
+                    <a href="">Blog</a>
+                  </li>
+                  <li class="listitem subject-items">
+                    <a href="">Tech Blogs</a>
+                  </li>
+                  <li class="listitem subject-items">
+                    <a href="">Teaching Center</a>
+                  </li>
+                  <li class="listitem subject-items">
+                    <a href=""><a href=""></a></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="popularcertificates popolar-box">
+                <h3>More</h3>
+                <ul class="certificatelist">
+                  <li class="listitem certificate-items">
+                    <a href="">Press</a>
+                  </li>
+                  <li class="listitem certificate-items">
+                    <a href="">Investors</a>
+                  </li>
+                  <li class="listitem certificate-items">
+                    <a href="">Terms</a>
+                  </li>
+                  <li class="listitem certificate-items">
+                    <a href="">Privacy</a>
+                  </li>
+                  <li class="listitem certificate-items">
+                    <a href="">Help</a>
+                  </li>
+                  <li class="listitem certificate-items">
+                    <a href="">Accessibility</a>
+                  </li>
+                  <li class="listitem certificate-items">
+                    <a href="">Contact</a>
+                  </li>
+                  <li class="listitem certificate-items">
+                    <a href="">Statement</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="populararticles popolar-box">
+               
+                  
+                </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b9a08a11f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./card.js"></script>
+    <script src="navbar.js"></script>
+    <script src="index.js"></script>
+    <script src="filter.js"></script>
+  </body>
+</html>
